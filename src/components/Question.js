@@ -96,9 +96,7 @@ export default ({ question, onSuccess, onFailure, time }) => {
           trackColor={theme.MAIN_COLOR_LIGHT}
         />
       )}
-      {!showResult && (
-        <Button title="Validate" onPress={onValidate} disabled={showResult} containerStyle={styles.cta} />
-      )}
+      {!showResult && <Button title="Submit" onPress={onValidate} disabled={showResult} containerStyle={styles.cta} />}
       {showResult && (
         <View style={styles.result}>
           {result ? <Text style={styles.correct}>Correct !</Text> : <Text style={styles.wrong}>Incorrect...</Text>}

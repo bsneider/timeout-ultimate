@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Share } from 'react-native';
+import { StyleSheet, Text, View, Share, Platform } from 'react-native';
 import { Button } from 'react-native-elements';
-
+import * as Clipboard from 'expo-clipboard';
 import { saveQuizResult } from '../utils/history';
 import theme from '../utils/theme.js';
 import ReportError from './questions/ReportError';
@@ -20,10 +20,18 @@ export default ({ navigation, rightAnswersCount, QuizLength, errors }) => {
 
   const share = async () => {
     try {
-      await Share.share({
-        message: `I earned a ${rightAnswersCount} / ${QuizLength} on the Timeout Ultimate Rules Quiz`,
-        title: 'WFDF 2021-2024 Rules of Ultimate',
-      });
+      const shareMessage = `I earned a ${rightAnswersCount} / ${QuizLength} on the Timeout Ultimate Rules Quiz`;
+      // https://www.reactnativeschool.com/how-to-share-from-a-react-native-app-including-the-web
+      if (Platform.OS === 'web') {
+        await Clipboard.setStringAsync(shareMessage);
+        alert(`The following message was copied to your clipboard.\n\n${shareMessage}`);
+        return;
+      } else {
+        await Share.share({
+          message: shareMessage,
+          title: 'WFDF 2021-2024 Rules of Ultimate',
+        });
+      }
     } catch (error) {
       console.log('Error sharing result', error);
     }
@@ -32,12 +40,12 @@ export default ({ navigation, rightAnswersCount, QuizLength, errors }) => {
   return (
     <View>
       <View style={styles.header}>
-        <Text style={styles.title}>Bilan</Text>
+        <Text style={styles.title}>Results</Text>
       </View>
       <Text>
-        {rightAnswersCount} bonnes réponses pour {QuizLength} questions
+        {rightAnswersCount} correct answers out of {QuizLength} questions
       </Text>
-      <Text>Mon commentaire :</Text>
+      <Text>My Results :</Text>
       <View style={styles.result}>
         <Text>{message}</Text>
       </View>
