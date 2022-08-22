@@ -70,9 +70,9 @@ exports[`<HomeScreen /> renders correctly 1`] = `
         }
       }
     >
-      270
+      85
     </Text>
-     questions t'attendent pour apprendre les règles de l'ultimate !
+     questions are waiting for you to learn the 2021-2024 WFDF rules of ultimate!
   </Text>
   <View
     style={
@@ -147,7 +147,7 @@ exports[`<HomeScreen /> renders correctly 1`] = `
               }
             }
           >
-            Jouer
+            Play
           </Text>
         </View>
       </View>
@@ -218,7 +218,7 @@ exports[`<HomeScreen /> renders correctly 1`] = `
               }
             }
           >
-            Historique
+            History
           </Text>
         </View>
       </View>
@@ -289,7 +289,7 @@ exports[`<HomeScreen /> renders correctly 1`] = `
               }
             }
           >
-            Règlement
+            Rules
           </Text>
         </View>
       </View>

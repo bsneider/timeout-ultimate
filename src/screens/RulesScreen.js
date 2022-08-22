@@ -45,8 +45,8 @@ export default (props) => {
   };
 
   const list = [
-    { title: 'Règles', onPress: () => switchContent('rules') },
-    { title: 'Gestes', onPress: () => switchContent('handSignals') },
+    { title: 'Rules', onPress: () => switchContent('rules') },
+    { title: 'HandSignals', onPress: () => switchContent('handSignals') },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default (props) => {
           autoFocus
           value={searchText}
           onChangeText={setSearchText}
-          placeholder="Rechercher un mot…"
+          placeholder="Search for a word…"
           rightIcon={
             <MaterialCommunityIcons
               name="close-circle"

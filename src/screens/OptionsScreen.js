@@ -1,10 +1,11 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, ScrollView, Text, View } from 'react-native';
 import { CheckBox, Button } from 'react-native-elements';
 
 import theme from '../utils/theme.js';
-import questions from '../../data/questions';
+import questions from '../../data/questions_EN_US';
 import { Levels, Categories } from '../utils/config';
 
 export default (props) => {
@@ -21,8 +22,8 @@ export default (props) => {
     setCheckedCategories(newCheckedCategories);
   };
 
-  const startQuizz = () => {
-    props.navigation.navigate('QuizzScreen', { number, time, level, checkedCategories });
+  const startQuiz = () => {
+    props.navigation.navigate('QuizScreen', { number, time, level, checkedCategories });
   };
 
   const countByCategory = {};
@@ -30,7 +31,7 @@ export default (props) => {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.header}>Nombre de questions</Text>
+      <Text style={styles.header}>Number of questions</Text>
       <View style={styles.options}>
         <Button
           type={number === 5 ? 'solid' : 'outline'}
@@ -51,7 +52,7 @@ export default (props) => {
           onPress={() => setNumber(30)}
         />
       </View>
-      <Text style={styles.header}>Temps par question</Text>
+      <Text style={styles.header}>Time per question</Text>
       <View style={styles.options}>
         <Button
           type={time === 30 ? 'solid' : 'outline'}
@@ -68,49 +69,49 @@ export default (props) => {
         <Button
           type={time === null ? 'solid' : 'outline'}
           containerStyle={styles.button}
-          title="Aucun"
+          title="None"
           onPress={() => setTime(null)}
         />
       </View>
-      <Text style={styles.header}>Niveau</Text>
+      <Text style={styles.header}>Level</Text>
       <View style={styles.options}>
         <Button
           type={level === Levels.EASY ? 'solid' : 'outline'}
           containerStyle={[styles.button, styles.wrapped]}
-          title="Facile"
+          title="Easy"
           onPress={() => setLevel(Levels.EASY)}
         />
         <Button
           type={level === Levels.MIDDLE ? 'solid' : 'outline'}
           containerStyle={[styles.button, styles.wrapped]}
-          title="Moyen"
+          title="Medium"
           onPress={() => setLevel(Levels.MIDDLE)}
         />
         <Button
           type={level === Levels.DIFFICULT ? 'solid' : 'outline'}
           containerStyle={[styles.button, styles.wrapped]}
-          title="Difficile"
+          title="Hard"
           onPress={() => setLevel(Levels.DIFFICULT)}
         />
         <Button
           type={level === Levels.ANY ? 'solid' : 'outline'}
           containerStyle={[styles.button, styles.wrapped]}
-          title="Tous"
+          title="All"
           onPress={() => setLevel(Levels.ANY)}
         />
       </View>
       <View style={styles.centered}>
-        <Button containerStyle={styles.cta} title="JOUER" onPress={startQuizz} type="solid" />
+        <Button containerStyle={styles.cta} title="Play" onPress={startQuiz} type="solid" />
         <Button
           containerStyle={styles.cta}
-          title={seeMore ? "- d'options" : "+ d'options"}
+          title={seeMore ? '- options' : '+ options'}
           onPress={() => setSeeMore(!seeMore)}
           type="outline"
         />
       </View>
       {seeMore && (
         <>
-          <Text style={styles.header}>Chapitre des règles</Text>
+          <Text style={styles.header}>Rules Chapter</Text>
           {Object.keys(Categories).map((category, index) => (
             <CheckBox
               key={index}
@@ -124,10 +125,10 @@ export default (props) => {
             />
           ))}
           <View style={styles.centered}>
-            <Button containerStyle={styles.cta} title="JOUER" onPress={startQuizz} type="solid" />
+            <Button containerStyle={styles.cta} title="Play" onPress={startQuiz} type="solid" />
             <Button
               containerStyle={styles.cta}
-              title={seeMore ? "- d'options" : "+ d'options"}
+              title={seeMore ? '- options' : '+ options'}
               onPress={() => setSeeMore(!seeMore)}
               type="outline"
             />

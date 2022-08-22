@@ -7,7 +7,7 @@ import Toast, { BaseToast } from 'react-native-toast-message';
 
 import HomeScreen from './screens/HomeScreen.js';
 import OptionsScreen from './screens/OptionsScreen.js';
-import QuizzScreen from './screens/QuizzScreen.js';
+import QuizScreen from './screens/QuizScreen.js';
 import HistoryScreen from './screens/HistoryScreen.js';
 import AboutScreen from './screens/AboutScreen.js';
 import RulesScreen from './screens/RulesScreen.js';
@@ -45,17 +45,17 @@ export default function App() {
           theme={reactNavigationTheme}
           fallback={<ActivityIndicator animating color={theme.MAIN_COLOR} style={{ top: '45%' }} size="large" />}
         >
-          <Stack.Navigator screenOptions={{ headerBackTitle: 'Retour' }}>
+          <Stack.Navigator screenOptions={{ headerBackTitle: 'Back' }}>
             <Stack.Screen
               name="HomeScreen"
               component={HomeScreen}
               options={{ title: 'Timeout Ultimate', headerShown: false }}
             />
-            <Stack.Screen name="OptionsScreen" component={OptionsScreen} options={{ title: 'Démarrer mon quizz' }} />
-            <Stack.Screen name="QuizzScreen" component={QuizzScreen} />
-            <Stack.Screen name="HistoryScreen" component={HistoryScreen} options={{ title: 'Historique' }} />
-            <Stack.Screen name="AboutScreen" component={AboutScreen} options={{ title: 'À propos' }} />
-            <Stack.Screen name="RulesScreen" component={RulesScreen} options={{ title: 'Règlement' }} />
+            <Stack.Screen name="OptionsScreen" component={OptionsScreen} options={{ title: 'Start my quiz' }} />
+            <Stack.Screen name="QuizScreen" component={QuizScreen} />
+            <Stack.Screen name="HistoryScreen" component={HistoryScreen} options={{ title: 'History' }} />
+            <Stack.Screen name="AboutScreen" component={AboutScreen} options={{ title: 'About' }} />
+            <Stack.Screen name="RulesScreen" component={RulesScreen} options={{ title: 'Rules' }} />
           </Stack.Navigator>
         </NavigationContainer>
         <Toast config={toastConfig} />

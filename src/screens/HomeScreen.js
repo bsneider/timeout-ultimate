@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
 import { Button } from 'react-native-elements';
@@ -6,47 +6,41 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import theme from '../utils/theme.js';
-import questions from '../../data/questions';
+import questions from '../../data/questions_EN_US';
 import logo from '../../assets/icon.png';
 
-export default (props) => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={logo} />
-      </View>
-      <Text style={styles.title}>Timeout Ultimate</Text>
-      <Text style={styles.welcomeText}>
-        <Text style={styles.emphasis}>{questions.length}</Text> questions t'attendent pour apprendre les règles de
-        l'ultimate !
-      </Text>
-      <View style={styles.buttonsArea}>
-        <Button
-          containerStyle={styles.button}
-          titleStyle={styles.mainButtonText}
-          title="Jouer"
-          onPress={() => props.navigation.navigate('OptionsScreen')}
-        />
-        <Button
-          containerStyle={styles.button}
-          title="Historique"
-          onPress={() => props.navigation.navigate('HistoryScreen')}
-        />
-        <Button
-          containerStyle={styles.button}
-          title="Règlement"
-          onPress={() => props.navigation.navigate('RulesScreen')}
-        />
-      </View>
-      <View style={styles.infoArea}>
-        <Pressable onPress={() => props.navigation.navigate('AboutScreen')}>
-          <MaterialCommunityIcons name="information-outline" style={styles.icon} />
-        </Pressable>
-      </View>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-  );
-};
+export default (props) => (
+  <SafeAreaView style={styles.container}>
+    <View style={styles.logoContainer}>
+      <Image style={styles.logo} source={logo} />
+    </View>
+    <Text style={styles.title}>Timeout Ultimate</Text>
+    <Text style={styles.welcomeText}>
+      <Text style={styles.emphasis}>{questions.length}</Text> questions are waiting for you to learn the 2021-2024 WFDF
+      rules of ultimate!
+    </Text>
+    <View style={styles.buttonsArea}>
+      <Button
+        containerStyle={styles.button}
+        titleStyle={styles.mainButtonText}
+        title="Play"
+        onPress={() => props.navigation.navigate('OptionsScreen')}
+      />
+      <Button
+        containerStyle={styles.button}
+        title="History"
+        onPress={() => props.navigation.navigate('HistoryScreen')}
+      />
+      <Button containerStyle={styles.button} title="Rules" onPress={() => props.navigation.navigate('RulesScreen')} />
+    </View>
+    <View style={styles.infoArea}>
+      <Pressable onPress={() => props.navigation.navigate('AboutScreen')}>
+        <MaterialCommunityIcons name="information-outline" style={styles.icon} />
+      </Pressable>
+    </View>
+    <StatusBar style="auto" />
+  </SafeAreaView>
+);
 
 const styles = StyleSheet.create({
   container: {

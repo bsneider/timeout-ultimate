@@ -33,7 +33,7 @@ exports[`<AboutScreen /> renders correctly 1`] = `
         }
       }
     >
-      Bonjour ! Je suis Martin Salles, le développeur derrière Timeout Ultimate. C'est une application conçue par des joueurs d'ultimate pour aider d'autres joueurs à apprendre les règles de l'ultimate. Elle est et restera gratuite.
+      Bonjour ! Je suis Martin Salles, le développeur derrière Timeout Ultimate. C'est une application conçue par des joueurs d'ultimate pour aider d'autres joueurs à apprendre les Rules de l'ultimate. Elle est et restera gratuite. English version by Brandon Sneider.
     </Text>
     <Text
       style={
@@ -53,7 +53,7 @@ exports[`<AboutScreen /> renders correctly 1`] = `
         }
       }
     >
-      Je souhaite remercier tous ceux qui ont contribué au développement de Timeout Ultimate. Une grande partie des questions viennent du jeu Disque Tu Sais de Pablo. Certaines questions ont été rédigées par Pierre Gruau pour les Monkeys. L'application utilise aussi les Hand Signals dessinés par Raphaël Candelier pour le PUC et la WFDF.
+      Je souhaite remercier All ceux qui ont contribué au développement de Timeout Ultimate. Une grande partie des questions viennent du jeu Disque Tu Sais de Pablo. Certaines questions ont été rédigées par Pierre Gruau pour les Monkeys. L'application utilise aussi les Hand Signals dessinés par Raphaël Candelier pour le PUC et la WFDF.
     </Text>
     <Text
       style={
@@ -63,7 +63,7 @@ exports[`<AboutScreen /> renders correctly 1`] = `
         }
       }
     >
-      Les règles de l'ultimate sont tirés du document "WFDF Rules of Ultimate 2021-2024" produit par la World Flying Disc Federation, puis traduit par la FFDF.
+      Les Rules de l'ultimate sont tirés du document "WFDF Rules of Ultimate 2021-2024" produit par la World Flying Disc Federation, puis traduit par la FFDF.
     </Text>
     <Text
       style={

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import { loadQuizzResults } from '../utils/history';
+import { loadQuizResults } from '../utils/history';
 import theme from '../utils/theme.js';
 
 function formatDate(date) {
@@ -22,7 +22,7 @@ export default (props) => {
 
   useEffect(() => {
     (async function loadResults() {
-      const loadedResults = await loadQuizzResults();
+      const loadedResults = await loadQuizResults();
       setResults(loadedResults);
     })();
   }, []);
@@ -32,7 +32,7 @@ export default (props) => {
   let totalQuestions = 0,
     totalRightAnswers = 0;
   orderedResults.forEach((result) => {
-    totalQuestions += result.quizzLength;
+    totalQuestions += result.QuizLength;
     totalRightAnswers += result.rightAnswersCount;
   });
 
@@ -40,23 +40,19 @@ export default (props) => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Questions : {totalQuestions}</Text>
-        <Text style={styles.headerText}>Bonnes réponses : {totalRightAnswers}</Text>
+        <Text style={styles.headerText}>Correct Answers : {totalRightAnswers}</Text>
         {results.length > 0 && (
-          <Text style={styles.headerText}>
-            Pourcentage : {Math.round((totalRightAnswers / totalQuestions) * 100)} %
-          </Text>
+          <Text style={styles.headerText}>Percentage: {Math.round((totalRightAnswers / totalQuestions) * 100)} %</Text>
         )}
       </View>
       {results.length === 0 && (
-        <Text style={styles.incentive}>
-          Il n'y a pas encore de résultats parce que tu n'as pas encore fait de quiz !
-        </Text>
+        <Text style={styles.incentive}>There are no results yet because you haven't taken a quiz yet !</Text>
       )}
       <ScrollView>
         {orderedResults.map((result, index) => (
           <Text key={index}>
-            {formatDate(new Date(result.createdAt))} - {result.rightAnswersCount} bonnes réponse sur{' '}
-            {result.quizzLength} ({((result.rightAnswersCount * 100) / result.quizzLength).toFixed()} %)
+            {formatDate(new Date(result.createdAt))} - {result.rightAnswersCount} Correct answers on {result.QuizLength}{' '}
+            ({((result.rightAnswersCount * 100) / result.QuizLength).toFixed()} %)
           </Text>
         ))}
       </ScrollView>

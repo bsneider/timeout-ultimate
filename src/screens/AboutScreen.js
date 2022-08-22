@@ -9,7 +9,7 @@ import theme from '../utils/theme.js';
 export default (props) => {
   const sendEmailAsync = () => {
     MailComposer.composeAsync({
-      recipients: ['ultimate.timeout@gmail.com'],
+      recipients: ['ultimatetimeout+englishversion@gmail.com'],
       subject: 'À propos de Timeout Ultimate',
     });
   };
@@ -18,17 +18,17 @@ export default (props) => {
       <Text style={styles.header}>À propos</Text>
       <Text style={styles.text}>
         Bonjour ! Je suis Martin Salles, le développeur derrière Timeout Ultimate. C'est une application conçue par des
-        joueurs d'ultimate pour aider d'autres joueurs à apprendre les règles de l'ultimate. Elle est et restera
-        gratuite.
+        joueurs d'ultimate pour aider d'autres joueurs à apprendre les Rules de l'ultimate. Elle est et restera
+        gratuite. English version by Brandon Sneider.
       </Text>
       <Text style={styles.header}>Remerciements</Text>
       <Text style={styles.text}>
-        Je souhaite remercier tous ceux qui ont contribué au développement de Timeout Ultimate. Une grande partie des
+        Je souhaite remercier All ceux qui ont contribué au développement de Timeout Ultimate. Une grande partie des
         questions viennent du jeu Disque Tu Sais de Pablo. Certaines questions ont été rédigées par Pierre Gruau pour
         les Monkeys. L'application utilise aussi les Hand Signals dessinés par Raphaël Candelier pour le PUC et la WFDF.
       </Text>
       <Text style={styles.text}>
-        Les règles de l'ultimate sont tirés du document "WFDF Rules of Ultimate 2021-2024" produit par la World Flying
+        Les Rules de l'ultimate sont tirés du document "WFDF Rules of Ultimate 2021-2024" produit par la World Flying
         Disc Federation, puis traduit par la FFDF.
       </Text>
       <Text style={styles.header}>Contribuer</Text>

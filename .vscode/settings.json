@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "./scripts/venv/bin/python",
+    "cSpell.words": [
+        "deepl",
+        "Pressable",
+        "WFDF"
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true
+}

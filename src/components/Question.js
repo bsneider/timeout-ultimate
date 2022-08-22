@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Platform } from 'react-native';
 import { CheckBox, Button, LinearProgress } from 'react-native-elements';
 
 import theme from '../utils/theme.js';
@@ -96,14 +96,12 @@ export default ({ question, onSuccess, onFailure, time }) => {
           trackColor={theme.MAIN_COLOR_LIGHT}
         />
       )}
-      {!showResult && <Button title="Valider" onPress={onValidate} disabled={showResult} containerStyle={styles.cta} />}
+      {!showResult && (
+        <Button title="Validate" onPress={onValidate} disabled={showResult} containerStyle={styles.cta} />
+      )}
       {showResult && (
         <View style={styles.result}>
-          {result ? (
-            <Text style={styles.correct}>Bonne réponse !</Text>
-          ) : (
-            <Text style={styles.wrong}>Mauvaise réponse...</Text>
-          )}
+          {result ? <Text style={styles.correct}>Correct !</Text> : <Text style={styles.wrong}>Incorrect...</Text>}
           <Text>{question.explanation}</Text>
           <DisplayedRule ruleNumbers={question.rules} />
           <Feedback question={question} style={styles.reportIcon} />
@@ -122,6 +120,7 @@ const styles = StyleSheet.create({
   image: {
     resizeMode: 'contain',
     height: '100%',
+    width: Platform.OS === 'web' ? 300 : '100%',
   },
   question: {
     fontSize: theme.FONT_SIZE_M,

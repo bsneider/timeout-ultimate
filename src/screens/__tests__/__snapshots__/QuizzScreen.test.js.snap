@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<QuizzScreen /> renders correctly 1`] = `
+exports[`<QuizScreen /> renders correctly 1`] = `
 <RCTScrollView
   contentContainerStyle={
     Object {
@@ -374,7 +374,7 @@ exports[`<QuizzScreen /> renders correctly 1`] = `
                   }
                 }
               >
-                Valider
+                Validate
               </Text>
             </View>
           </View>

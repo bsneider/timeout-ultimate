@@ -1,10 +1,10 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const STORAGE_KEY = 'quizz_result';
+const STORAGE_KEY = 'Quiz_result';
 
-export const saveQuizzResult = async (result) => {
+export const saveQuizResult = async (result) => {
   try {
-    const existingResults = await loadQuizzResults();
+    const existingResults = await loadQuizResults();
     const newResults = JSON.stringify([...(existingResults || []), result]);
     await AsyncStorage.setItem(STORAGE_KEY, newResults);
   } catch (e) {
@@ -12,7 +12,7 @@ export const saveQuizzResult = async (result) => {
   }
 };
 
-export const loadQuizzResults = async () => {
+export const loadQuizResults = async () => {
   try {
     const jsonResults = await AsyncStorage.getItem(STORAGE_KEY);
     return jsonResults != null ? JSON.parse(jsonResults) : [];

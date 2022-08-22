@@ -39,7 +39,7 @@ export default ({ question, checked }) => {
           <Text>{question.explanation}</Text>
           {question.rules && (
             <>
-              <Text style={{ marginTop: 8 }}>Règlement :</Text>
+              <Text style={{ marginTop: 8 }}>Rules :</Text>
               {question.rules.map((ruleNumber) => (
                 <Text key={ruleNumber} style={styles.rule}>
                   {ruleNumber} {flattenedRules[ruleNumber]}

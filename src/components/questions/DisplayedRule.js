@@ -20,7 +20,7 @@ export default ({ ruleNumbers }) => {
     <>
       <Button
         type="outline"
-        title="Voir la règle"
+        title="See the rule"
         containerStyle={styles.ctaContainer}
         buttonStyle={styles.ctaButton}
         titleStyle={styles.ctaText}
@@ -29,7 +29,7 @@ export default ({ ruleNumbers }) => {
       <BottomSheet onClose={() => setIsVisible(false)} isVisible={isVisible}>
         {ruleNumbers.map((ruleNumber) => (
           <View key={ruleNumber}>
-            <Text style={styles.title}>Règle {ruleNumber}</Text>
+            <Text style={styles.title}>Rule {ruleNumber}</Text>
             <Text>{flattenedRules[ruleNumber]}</Text>
           </View>
         ))}

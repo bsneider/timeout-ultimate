@@ -9,10 +9,10 @@ import theme from '../../utils/theme.js';
 export const FeedbackButton = ({ question, style }) => {
   const feedbackAlert = () => {
     Alert.alert(
-      'Signalement',
-      "Si une question n'est pas claire ou non conforme aux règles, merci de nous le signaler",
+      'Report',
+      'If a question is unclear or not in accordance with the Rules, please let us know',
       [
-        { text: 'Annuler', style: 'cancel' },
+        { text: 'Cancel', style: 'cancel' },
         { text: 'Message', onPress: sendEmailAsync },
       ],
       { cancelable: true },
@@ -21,11 +21,11 @@ export const FeedbackButton = ({ question, style }) => {
 
   const sendEmailAsync = () => {
     MailComposer.composeAsync({
-      recipients: ['ultimate.timeout@gmail.com'],
-      subject: "Une question n'est pas claire sur Timeout Ultimate",
+      recipients: ['ultimatetimeout+englishversion@gmail.com'],
+      subject: 'A question is unclear about Timeout Ultimate',
       body: `
 
-> Question concernée : ${question.question}
+> Question concerning : ${question.question}
 
 
       `,

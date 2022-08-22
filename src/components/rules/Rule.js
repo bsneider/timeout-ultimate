@@ -18,7 +18,7 @@ export default ({ number, rule, searchText }) => {
     await Clipboard.setStringAsync(copiedText);
     Toast.show({
       type: 'info',
-      text1: `La règle ${number} a été copiée.`,
+      text1: `Rule ${number} copied.`,
       text2: copiedText,
       visibilityTime: 2000,
     });
