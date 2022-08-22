@@ -114,7 +114,7 @@ export default ({ question, onSuccess, onFailure, time }) => {
 const styles = StyleSheet.create({
   imageContainer: {
     alignItems: 'center',
-    height: 100,
+    height: Platform.OS === 'web' ? 300 : 100,
     marginBottom: 16,
   },
   image: {

@@ -2,7 +2,13 @@
     "python.defaultInterpreterPath": "./scripts/venv/bin/python",
     "cSpell.words": [
         "deepl",
+        "nent",
+        "predeploy",
         "Pressable",
+        "proptypes",
+        "sallesma",
+        "unimodules",
+        "venv",
         "WFDF"
     ],
     "python.formatting.provider": "black",
