@@ -11,12 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: "gh-pages"
-      - name: list directories to see if we can find package.json
-        run: cd ..; ls -la
-      - uses: borales/actions-yarn@v3.0.0
+          ref: "github-pages"
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
         with:
-          cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v3.0.0
+          node-version: 16.x
+          cache: yarn
+
+      - name: 🏗 Setup Expo
+        uses: expo/expo-github-action@v7.2.0
         with:
-          cmd: deploy # will run `yarn deploy` command as set in package.json
+          expo-version: latest
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: Deploy to GitHub Pages using yarn/expo
+        run: yarn deploy
