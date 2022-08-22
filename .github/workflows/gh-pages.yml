@@ -13,7 +13,7 @@ jobs:
         with:
           ref: "gh-pages"
       - name: list directories to see if we can find package.json
-        run: ls -la
+        run: cd ..; ls -la
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install # will run `yarn install` command
