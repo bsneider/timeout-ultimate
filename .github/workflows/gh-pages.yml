@@ -27,5 +27,7 @@ jobs:
       - name: 📦 Install dependencies
         run: yarn install
 
+      # - run: git config --global user.email "you@example.com"
+      - run: git config --global user.name "GitHub Actions Agent"
       - name: Deploy to GitHub Pages using yarn/expo
         run: yarn deploy
