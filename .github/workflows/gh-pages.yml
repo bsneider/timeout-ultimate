@@ -1,0 +1,22 @@
+name: Deploy web version to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - github-pages
+jobs:
+  build:
+    name: Deploy to gh pages on push to gh-pages branch
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: "gh-pages"
+      - name: list directories to see if we can find package.json
+        run: cd ..; ls -la
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: deploy # will run `yarn deploy` command as set in package.json
