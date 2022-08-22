@@ -1,6 +1,6 @@
 /*
   Extracts rules from the official wfdf pdf.
-  Does not copy very well with rules paning over two pages. You may have to fix the file after its generation
+  Does not copy very well with rules spanning over two pages. You may have to fix the file after its generation
 */
 
 console.log('Starting to extract rules from the pdf...');
@@ -13,7 +13,7 @@ const options = {
   lastPage: 15,
 };
 
-pdfExtract.extract('./assets/WFDF Rules of Ultimate 2021-2024 - French.pdf', options, (err, data) => {
+pdfExtract.extract('./assets/WFDF Rules of Ultimate 2021-2024.pdf', options, (err, data) => {
   if (err) return console.log(err);
 
   const fileContentArray = data.pages.reduce((totalContent, page) => {
@@ -30,7 +30,7 @@ pdfExtract.extract('./assets/WFDF Rules of Ultimate 2021-2024 - French.pdf', opt
           formattedPageContent.push(currentRule.trim());
         currentRule = pageContent[i];
       } else {
-        // Aggréger
+        // Aggregate
         currentRule = currentRule + pageContent[i];
       }
     }
