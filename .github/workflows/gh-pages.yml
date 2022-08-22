@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  build:
+    name: Deploy to gh pages on push to gh-pages branch
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: deploy # will run `yarn deploy` command as set in package.json
