@@ -8,6 +8,11 @@ jobs:
   build:
     name: Deploy to gh pages on push to gh-pages branch
     runs-on: ubuntu-20.04
+
+    ## Needed to write to the gh-pages directory
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -28,8 +33,14 @@ jobs:
         run: yarn install
 
       - name: expo build web artifacts
-        run: expo export:web
+        run: npx expo export:web
 
-      - run: git config --global user.name "GitHub Actions Agent"
-      - name: Deploy to GitHub Pages using gh-pages
-        run: gh-pages -d web-build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: web-build # The folder the action should deploy.
+
+
+      # - run: git config --global user.name "GitHub Actions Agent"
+      # - name: Deploy to GitHub Pages using gh-pages
+      #   run: gh-pages -d web-build
