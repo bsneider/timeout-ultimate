@@ -9,7 +9,7 @@ import theme from '../utils/theme.js';
 export default (props) => {
   const sendEmailAsync = () => {
     MailComposer.composeAsync({
-      recipients: ['ultimatetimeout+englishversion@gmail.com'],
+      recipients: ['justhuckitstudios+timeoutultimate@gmail.com'],
       subject: 'À propos de Timeout Ultimate',
     });
   };

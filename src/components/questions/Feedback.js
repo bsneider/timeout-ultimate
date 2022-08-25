@@ -21,7 +21,7 @@ export const FeedbackButton = ({ question, style }) => {
 
   const sendEmailAsync = () => {
     MailComposer.composeAsync({
-      recipients: ['ultimatetimeout+englishversion@gmail.com'],
+      recipients: ['justhuckitstudios+timeoutultimate@gmail.com'],
       subject: 'A question is unclear about Timeout Ultimate',
       body: `
 
