@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/timeout-ultimate/static/js/app.240a001f.chunk.js",
-    "app.js.map": "/timeout-ultimate/static/js/app.240a001f.chunk.js.map",
+    "app.js": "/timeout-ultimate/static/js/app.a76a5f2b.chunk.js",
+    "app.js.map": "/timeout-ultimate/static/js/app.a76a5f2b.chunk.js.map",
     "runtime~app.js": "/timeout-ultimate/static/js/runtime~app.015cabf5.js",
     "runtime~app.js.map": "/timeout-ultimate/static/js/runtime~app.015cabf5.js.map",
-    "static/js/2.d84a0c04.chunk.js": "/timeout-ultimate/static/js/2.d84a0c04.chunk.js",
-    "static/js/2.d84a0c04.chunk.js.map": "/timeout-ultimate/static/js/2.d84a0c04.chunk.js.map",
+    "static/js/2.4575e9cb.chunk.js": "/timeout-ultimate/static/js/2.4575e9cb.chunk.js",
+    "static/js/2.4575e9cb.chunk.js.map": "/timeout-ultimate/static/js/2.4575e9cb.chunk.js.map",
     "fonts/AntDesign.ttf": "/timeout-ultimate/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/timeout-ultimate/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/timeout-ultimate/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/timeout-ultimate/index.html",
     "manifest.json": "/timeout-ultimate/manifest.json",
     "serve.json": "/timeout-ultimate/serve.json",
-    "static/js/2.d84a0c04.chunk.js.LICENSE.txt": "/timeout-ultimate/static/js/2.d84a0c04.chunk.js.LICENSE.txt",
+    "static/js/2.4575e9cb.chunk.js.LICENSE.txt": "/timeout-ultimate/static/js/2.4575e9cb.chunk.js.LICENSE.txt",
     "static/media/accepted.png": "/timeout-ultimate/static/media/accepted.2136e009.png",
     "static/media/bell.png": "/timeout-ultimate/static/media/bell.cf04af27.png",
     "static/media/contest.png": "/timeout-ultimate/static/media/contest.20775e51.png",
@@ -56,7 +56,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.015cabf5.js",
-    "static/js/2.d84a0c04.chunk.js",
-    "static/js/app.240a001f.chunk.js"
+    "static/js/2.4575e9cb.chunk.js",
+    "static/js/app.a76a5f2b.chunk.js"
   ]
 }
