@@ -21,7 +21,7 @@ export default [
   {
     category: Categories.FIELD,
     question:
-      'I am on defense, an attacker comes within 3 meters of the disc carrier. I have the right to interfere with the thrower in this 3 meter zone.',
+      'I am on defense, an attacker comes within 3 meters of the thrower. I have the right to interfere with the thrower in this 3 meter zone.',
     image: undefined,
     answerChoices: {
       a: 'True',

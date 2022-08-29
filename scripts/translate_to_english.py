@@ -22,6 +22,7 @@ translation_fixes = {
     "Pitcher": "Thrower",
     "pitcher": "thrower",
     "launcher": "thrower",
+    "disc carrier": "thrower",
     "putting the other outside": "putting the other out-of-bounds",
     "pull drop": "dropped pull",
     "where it left off": "where it stopped",

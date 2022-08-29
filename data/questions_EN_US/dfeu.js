@@ -75,14 +75,14 @@ export default [
     },
     correctAnswers: ['c'],
     explanation: 'It is up to the attacking team to choose.',
-    rules: ['7.12.'],
+    rules: ['7.12.', '11.8.'],
     source: 'DFEU - Pablo',
     level: Levels.MIDDLE,
   },
   {
     category: Categories.COUNT,
     question:
-      "A player has just dived for the disc. As soon as it lands on his chest, the defender says 'stalling' and starts counting",
+      "A player has just dived (bid/layedout) for the disc. As soon as bidder lands on their chest, the defender says 'stalling' and starts counting",
     image: undefined,
     answerChoices: {
       a: 'The defender must wait for the player to get up before starting to count',

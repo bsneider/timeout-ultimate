@@ -981,7 +981,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
     },
     correctAnswers: ['b'],
     explanation:
-      'I can make my pass, without a check, either from where I picked up the disc or at the entrance to my zone (pivot foot outside the zone). The annotations (10.1) also specify this case.',
+      'I can make my pass, without a check, either from where I picked up the disc or at the entrance to my zone (pivot foot outside the zone). The rules (10.1) also specify this case.',
     rules: ['10.1.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -997,7 +997,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
     },
     correctAnswers: ['b'],
     explanation:
-      'I can make my pass, without checking. Once out of the zone, I can make my pass without checking. The annotations (10.1) also specify this case.',
+      'I can make my pass, without checking. Once out of the zone, I can make my pass without checking. The rules (10.1) also specify this case.',
     rules: ['10.1.', '13.10.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -1108,7 +1108,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
     correctAnswers: ['a'],
     explanation: `
 « The pivot foot must be placed in the court and the lines are not part of it.
-However, the annotations (13.11) state that since the lines are very narrow and the effect on play negligible, it is acceptable to place the pivot foot on the line.»
+However, the rules (13.11) state that since the lines are very narrow and the effect on play negligible, it is acceptable to place the pivot foot on the line.»
     `,
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
@@ -1798,7 +1798,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
     },
     correctAnswers: ['a'],
     explanation:
-      'Any attacking player can call a double team, unlike other scoring offenses which can only be called by the disc carrier',
+      'Any attacking player can call a double team, unlike other scoring offenses which can only be called by the thrower',
     rules: ['15.5.', '15.5.1.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -2324,7 +2324,7 @@ If he is too close, I must call distance or disc space so that he moves back and
     },
     correctAnswers: ['a'],
     explanation:
-      'If the marker is not at the correct distance, the disc carrier can call a marker infraction based on which body part is too close: disc space (torso), straddle (line between the feet), wrapping (line between the hands)',
+      'If the marker is not at the correct distance, the thrower can call a marker infraction based on which body part is too close: disc space (torso), straddle (line between the feet), wrapping (line between the hands)',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,

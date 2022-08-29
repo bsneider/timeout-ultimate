@@ -158,7 +158,7 @@ export default [
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
     question:
-      "I am defending the disc carrier. I commit a 'straddle' called by the disc carrier. 'Straddle – a line between a defensive player’s feet comes within one disc diameter of the thrower’s pivot point.'",
+      "I am defending the thrower. I commit a 'straddle' called by the thrower. 'Straddle – a line between a defensive player’s feet comes within one disc diameter of the thrower’s pivot point.'",
     image: undefined,
     answerChoices: {
       a: 'I continue to count without the game stopping, starting with the last number completely pronounced minus (1)',
@@ -176,7 +176,7 @@ export default [
   {
     category: Categories.COUNT,
     question:
-      "I am marking the disc carrier. A 'pick' is called when I have just counted '8'. What do I need to do to get the count back?",
+      "I am marking the thrower. A 'pick' is called when I have just counted '8'. What do I need to do to get the count back?",
     image: undefined,
     answerChoices: {
       a: 'Stall 6',
@@ -208,7 +208,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      "I'm on offense and I run after a huck. My defender trips me and I fall. I call 'Foul' and my defender accepts. I retain possession of the disc and the play resumes at (1) with a check where I should have caught the disc.",
+      "I'm on offense and I run after a huck. My defender trips me and I fall. I call 'Foul' and my defender accepts. I obtain possession of the disc and the play resumes at (1) with a check where I would have caught the disc.",
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -237,22 +237,22 @@ export default [
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
   },
-  {
-    category: Categories.FOULS,
-    question:
-      'If a defending player touches the disc and then the arm (and only the arm) of the attacker on a catch, it is still a foul by the defender.',
-    image: undefined,
-    answerChoices: {
-      a: 'True',
-      b: 'False',
-    },
-    correctAnswers: ['b'],
-    explanation:
-      'Contact on the arms after the defense must be avoided but is not a foul (excluding strip and dangerous play)',
-    rules: ['17.2.1.1.'],
-    source: 'Monkeys - Pierre Gruau',
-    level: Levels.MIDDLE,
-  },
+  // {
+  //   category: Categories.FOULS,
+  //   question:
+  //     'If a defending player touches the disc and then the arm (and only the arm) of the attacker after a catch.  Is a foul by the defender.',
+  //   image: undefined,
+  //   answerChoices: {
+  //     a: 'True',
+  //     b: 'False',
+  //   },
+  //   correctAnswers: ['b'],
+  //   explanation:
+  //     'Contact on the arms after the defense must be avoided but is not a foul (excluding strip and dangerous play)',
+  //   rules: ['17.2.1.1.'],
+  //   source: 'Monkeys - Pierre Gruau',
+  //   level: Levels.MIDDLE,
+  // },
   {
     category: Categories.FOULS,
     question:
@@ -323,7 +323,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      "I am a marker on the disc carrier. A 'pick' is called when I just counted '4'. What do I need to do to get the count back?",
+      "I am a marker on the thrower. A 'pick' is called when I just counted '4'. What do I need to do to get the count back?",
     image: undefined,
     answerChoices: {
       a: 'Stall 2',
@@ -352,14 +352,14 @@ export default [
     correctAnswers: ['a'],
     explanation: `La réponse se trouve dans:
 "-rules of ultimate", paragraphe 16.2.4
--official annotations 16.6`,
+-official rules 16.6`,
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
-    question: 'I am defending the disc carrier. I commit a straddle called by the disc carrier.',
+    question: 'I am defending the thrower. I commit a straddle called by the thrower.',
     image: undefined,
     answerChoices: {
       a: 'I continue to count without the game stopping, starting with the last number completely pronounced minus (1)',
@@ -446,7 +446,7 @@ export default [
       d: 'Nothing, it is allowed. There is a point',
     },
     correctAnswers: ['d'],
-    explanation: 'The answer can be found in the official annotations, paragraph 18.12',
+    explanation: 'The answer can be found in the official rules, paragraph 18.12',
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
@@ -493,7 +493,7 @@ export default [
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation: 'The answer can be found in the official annotations, paragraph 18.15',
+    explanation: 'The answer can be found in the official rules, paragraph 18.15',
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
@@ -538,7 +538,7 @@ export default [
       b: 'False',
     },
     correctAnswers: ['a'],
-    explanation: 'The answer can be found in rules of ultimate, official annotations, paragraph 11.5',
+    explanation: 'The answer can be found in rules of ultimate, official rules, paragraph 11.5',
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
@@ -571,7 +571,7 @@ export default [
       d: 'I stay on the field without my team taking a timeout',
     },
     correctAnswers: ['a', 'b'],
-    explanation: 'The rule is completed by the annotations, paragraph 19.1.',
+    explanation: 'The rule is completed by the rules, paragraph 19.1.',
     rules: ['19.1.2.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
@@ -602,7 +602,7 @@ export default [
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation: 'The answer can be found in the official annotations, paragraph 20.1',
+    explanation: 'The answer can be found in the official rules, paragraph 20.1',
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
@@ -634,7 +634,7 @@ export default [
     },
     correctAnswers: ['b'],
     explanation:
-      'If the turnover occurred without a call that stopped the game, no check is needed. The correct answer can be found in the annotations, paragraph 10.1.',
+      'If the turnover occurred without a call that stopped the game, no check is needed. The correct answer can be found in the rules, paragraph 10.1.',
     rules: undefined,
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
