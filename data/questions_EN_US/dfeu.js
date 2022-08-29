@@ -191,14 +191,14 @@ export default [
   },
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
-    question: "Thrower calls 'Disc Space' and scorer challenges",
+    question: "Thrower calls 'Disc Space' and marker challenges",
     image: undefined,
     answerChoices: {
       a: 'The game stops',
       b: "The game doesn't stop",
-      c: 'The scorer cannot challenge a scoring infraction',
+      c: 'The marker cannot challenge a marking infraction',
     },
-    correctAnswers: ['a'],
+    correctAnswers: ['b'],
     explanation: 'The game would not have stopped if the infraction had been accepted.',
     rules: ['18.1.2.'],
     source: 'DFEU - Pablo',
