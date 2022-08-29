@@ -45,6 +45,8 @@ translation_fixes = {
     "a marker on the": "marking the",
     "Oui": "True",
     "Non": "False",
+    "striker": "offensive player",
+    "Striker": "Offensive player",
 }
 
 

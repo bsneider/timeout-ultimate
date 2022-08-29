@@ -1,11 +1,18 @@
 {
     "python.defaultInterpreterPath": "./scripts/venv/bin/python",
     "cSpell.words": [
+        "behaviour",
+        "behaviours",
         "deepl",
+        "defence",
+        "DFEU",
         "nent",
+        "offence",
         "predeploy",
         "Pressable",
         "proptypes",
+        "recognised",
+        "recognises",
         "sallesma",
         "unimodules",
         "venv",

@@ -6,8 +6,8 @@ export default [
     question: 'En outdoor, comment est positionné le point de Brick ?',
     image: undefined,
     answerChoices: {
-      a: 'À 10 mètres de la ligne de endzone',
-      b: 'À 18 mètres de la ligne de endzone',
+      a: 'À 10 mètres de la ligne de end zone',
+      b: 'À 18 mètres de la ligne de end zone',
       c: 'À 10 mètres du milieu du terrain',
       d: 'À 18 mètres du milieu du terrain',
     },

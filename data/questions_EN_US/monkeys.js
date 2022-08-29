@@ -45,7 +45,7 @@ export default [
   {
     category: Categories.FIELD,
     question:
-      "I'm an attacker. If I jump from the outside of the field, catch the disc in the air and fall back inside the field, is it a turnover?",
+      "I'm an attacker. If I jump from the out of bounds, catch the disc in the air and fall back inside the field, is it a turnover?",
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -141,7 +141,7 @@ export default [
   {
     category: Categories.RECEIVER,
     question:
-      'I lean on a teammate to win a duel on offense. I catch the disc and fall back into the endzone. My opponent complains about the boost I received. What happens?',
+      'I lean on a teammate to win a duel on offense. I catch the disc and fall back into the end zone. My opponent complains about the boost I received. What happens?',
     image: undefined,
     answerChoices: {
       a: 'It is a point',
@@ -307,7 +307,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      'On an uncontested defensive foul in the attacked endzone, both players must return to the endzone entry line before checking.',
+      'On an uncontested defensive foul in the attacked end zone, both players must return to the end zone entry line before checking.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -486,7 +486,7 @@ export default [
   },
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
-    question: 'Can a pick be called by a striker?',
+    question: 'Can a pick be called by a offensive player?',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -615,7 +615,7 @@ export default [
       a: 'No, this is not a valid reason',
       b: "Yes, it doesn't matter if this player is an attacker or a defender",
       c: 'Yes, but only if the opponent agrees',
-      d: 'Yes, but only if this player is a striker',
+      d: 'Yes, but only if this player is a offensive player',
     },
     correctAnswers: ['a'],
     explanation: '',
@@ -626,7 +626,7 @@ export default [
   {
     category: Categories.CHECK,
     question:
-      "A turnover occurs in the defended endzone, the thrower returns to the line. In order to play, she must wait for her marker to 'check' the disc.",
+      "A turnover occurs in the defended end zone, the thrower returns to the line. In order to play, she must wait for her marker to 'check' the disc.",
     image: undefined,
     answerChoices: {
       a: 'True',

@@ -6,8 +6,8 @@ export default [
     question: 'In outdoor, how is the Brick point positioned?',
     image: undefined,
     answerChoices: {
-      a: '10 meters from the endzone line',
-      b: '18 meters from the endzone line',
+      a: '10 meters from the end zone line',
+      b: '18 meters from the end zone line',
       c: '10 meters from the middle of the field',
       d: '18 meters from midfield',
     },

@@ -180,7 +180,7 @@ export default [
     image: undefined,
     answerChoices: {
       a: "This is a 'Strip' foul",
-      b: 'This is not a foul because the striker had already missed his catch',
+      b: 'This is not a foul because the offensive player had already missed his catch',
       c: 'It is a foul because the attacker was prevented from catching the disc on his second attempt',
     },
     correctAnswers: ['c'],

@@ -5,6 +5,7 @@ import { CheckBox, Button, LinearProgress } from 'react-native-elements';
 import theme from '../utils/theme.js';
 import Feedback from './questions/Feedback.js';
 import DisplayedRule from './questions/DisplayedRule.js';
+import rules from '../../data/rules/rules';
 
 const colors = ['#cddff3', '#F4C8A2', '#f8f99c', '#e5c9e5'];
 
@@ -17,6 +18,11 @@ export default ({ question, onSuccess, onFailure, time }) => {
     setChecked([]);
     setResult(undefined);
   }, [question.question + question.image]);
+
+  const flattenedRules = Object.values(rules).reduce(
+    (accumulated, currentChapter) => Object.assign(accumulated, currentChapter),
+    {},
+  );
 
   const onValidate = () => {
     if (currentTime < 1) setCurrentTime(1);
@@ -99,8 +105,29 @@ export default ({ question, onSuccess, onFailure, time }) => {
       {!showResult && <Button title="Submit" onPress={onValidate} disabled={showResult} containerStyle={styles.cta} />}
       {showResult && (
         <View style={styles.result}>
-          {result ? <Text style={styles.correct}>Correct !</Text> : <Text style={styles.wrong}>Incorrect...</Text>}
-          <Text>{question.explanation}</Text>
+          {result ? <Text style={styles.correct}>Correct!</Text> : <Text style={styles.wrong}>Incorrect...</Text>}
+          {question.rules ? (
+            <>
+              {question.rules.map((ruleNumber) => (
+                <View key={ruleNumber}>
+                  <Text style={styles.title}>Rule {ruleNumber}</Text>
+                  <Text>{flattenedRules[ruleNumber]}</Text>
+                </View>
+              ))}
+              <Text>{'\n'}</Text>
+            </>
+          ) : (
+            <Text />
+          )}
+          {question.explanation ? (
+            <>
+              <Text style={styles.explanation}>Explanation</Text>
+              <Text>{question.explanation}</Text>
+            </>
+          ) : (
+            <Text />
+          )}
+
           <DisplayedRule ruleNumbers={question.rules} />
           <Feedback question={question} style={styles.reportIcon} />
         </View>
@@ -122,6 +149,12 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: theme.FONT_SIZE_M,
+  },
+  explanation: {
+    fontSize: theme.FONT_SIZE_L,
+  },
+  title: {
+    fontSize: theme.FONT_SIZE_XL,
   },
   checkbox: {
     borderRadius: 8,

@@ -288,7 +288,7 @@ export default [
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation: 'One striker is enough.',
+    explanation: 'One offensive player is enough.',
     rules: ['7.2.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -514,7 +514,7 @@ For this, no attacker must have touched it.
     question: "Who can call the 'brick'?",
     image: undefined,
     answerChoices: {
-      a: 'All strikers',
+      a: 'All offensive players',
       b: 'The attacker who recovers the disc on the snap',
       c: 'Le puller',
       d: 'All advocates',
@@ -1652,7 +1652,8 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   },
   {
     category: Categories.TURNOVERS,
-    question: 'Turnovers in favor of my team in my end zone. Where should I set my pivot?',
+    question:
+      'A turnover occurs in our defending end zone.  I pick up the disc. Where should I set my pivot? (Choose all correct options)',
     image: undefined,
     answerChoices: {
       a: 'At the point where the disc stopped',
@@ -1667,7 +1668,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   {
     category: Categories.TURNOVERS,
     question:
-      'I call stall-out and my opponent has not thrown the disc. The play is stopped. He hands me the disc. I have to take it.',
+      'I call "Stall" and my opponent has not thrown the disc. The play is stopped. He hands me the disc. Do I have to take it?',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1710,36 +1711,36 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
     source: 'Disque Tu Sais - Pablo',
     level: Levels.EASY,
   },
-  {
-    category: Categories.GOAL,
-    question:
-      "I jump with support in the attacked area. I catch the disc in the air but with my momentum I fall back out of the playing area. The point is scored because my last feet before the catch were in the opponent's zone.",
-    image: undefined,
-    answerChoices: {
-      a: 'True',
-      b: 'False',
-    },
-    correctAnswers: ['b'],
-    explanation: 'The point is not valid. It should have landed in the zone.',
-    rules: ['14.1.', '14.1.1.'],
-    source: 'Disque Tu Sais - Pablo',
-    level: Levels.EASY,
-  },
-  {
-    category: Categories.GOAL,
-    question:
-      "I jump and take a call in the middle zone. I catch the disc in the air and land in the opponent's end zone. Is the point scored?",
-    image: undefined,
-    answerChoices: {
-      a: 'True',
-      b: 'False',
-    },
-    correctAnswers: ['a'],
-    explanation: '',
-    rules: ['14.1.', '14.1.1.'],
-    source: 'Disque Tu Sais - Pablo',
-    level: Levels.EASY,
-  },
+  // {
+  //   category: Categories.GOAL,
+  //   question:
+  //     "I jump with support in the attacked area. I catch the disc in the air but with my momentum I fall back out of the playing area. The point is scored because my last feet before the catch were in the opponent's zone.",
+  //   image: undefined,
+  //   answerChoices: {
+  //     a: 'True',
+  //     b: 'False',
+  //   },
+  //   correctAnswers: ['b'],
+  //   explanation: 'The point is not valid. It should have landed in the zone.',
+  //   rules: ['14.1.', '14.1.1.'],
+  //   source: 'Disque Tu Sais - Pablo',
+  //   level: Levels.EASY,
+  // },
+  // {
+  //   category: Categories.GOAL,
+  //   question:
+  //     "I jump and take a call in the middle zone. I catch the disc in the air and land in the opponent's end zone. Is the point scored?",
+  //   image: undefined,
+  //   answerChoices: {
+  //     a: 'True',
+  //     b: 'False',
+  //   },
+  //   correctAnswers: ['a'],
+  //   explanation: '',
+  //   rules: ['14.1.', '14.1.1.'],
+  //   source: 'Disque Tu Sais - Pablo',
+  //   level: Levels.EASY,
+  // },
   {
     category: Categories.FOULS_INFRACTIONS_VIOLATIONS,
     question: 'A breach of the rules related to the marking on the carrier or a walk (travel) is :',
@@ -1848,7 +1849,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   {
     category: Categories.FOULS_INFRACTIONS_VIOLATIONS,
     question:
-      'At the end of her throw, the striker puts her hand in my face. I call a foul. The pass is successful. What happens?',
+      'At the end of her throw, the offensive player puts her hand in my face. I call a foul. The pass is successful. What happens?',
     image: undefined,
     answerChoices: {
       a: 'Turnover because the thrower fouled during her throwing motion',
@@ -2013,7 +2014,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      "I am a defender. I intercept the disc and hit a striker right after. She calls a foul. I don't challenge. What happens?",
+      "I am a defender. I intercept the disc and hit a offensive player right after. She calls a foul. I don't challenge. What happens?",
     image: undefined,
     answerChoices: {
       a: 'The turnover is maintained',
@@ -2781,7 +2782,7 @@ After a Technical Break call:
     answerChoices: {
       a: 'Play resumes at the pivot point',
       b: 'The thrower remains the same',
-      c: 'Any striker can become a thrower',
+      c: 'Any offensive player can become a thrower',
       d: 'Attackers reposition themselves where they were',
       e: 'Les attaquants se positionnent où ils le souhaitent',
     },

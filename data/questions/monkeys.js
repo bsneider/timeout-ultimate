@@ -142,7 +142,7 @@ export default [
   {
     category: Categories.RECEIVER,
     question:
-      "Je m’appuie sur un coéquipier pour gagner un duel en attaque. Je catch le disque et retombe dans la endzone. Mon adversaire se plaint du coup de pouce dont j'ai bénéficié. Que se passe-t-il ?",
+      "Je m’appuie sur un coéquipier pour gagner un duel en attaque. Je catch le disque et retombe dans la end zone. Mon adversaire se plaint du coup de pouce dont j'ai bénéficié. Que se passe-t-il ?",
     image: undefined,
     answerChoices: {
       a: 'Il y a point',
@@ -308,7 +308,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      'Sur une faute défensive non-contestée dans la endzone attaquée, les 2 joueurs doivent revenir à la ligne d’entrée de endzone avant de checker.',
+      'Sur une faute défensive non-contestée dans la end zone attaquée, les 2 joueurs doivent revenir à la ligne d’entrée de end zone avant de checker.',
     image: undefined,
     answerChoices: {
       a: 'Vrai',
@@ -630,7 +630,7 @@ export default [
   {
     category: Categories.CHECK,
     question:
-      'Un turnover intervient dans la endzone défendue, la lanceuse revient à la ligne. Pour pouvoir jouer, elle doit attendre que sa marque « check » le disque.',
+      'Un turnover intervient dans la end zone défendue, la lanceuse revient à la ligne. Pour pouvoir jouer, elle doit attendre que sa marque « check » le disque.',
     image: undefined,
     answerChoices: {
       a: 'Vrai',
