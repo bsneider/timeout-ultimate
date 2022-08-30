@@ -85,7 +85,7 @@ export default [
     },
     correctAnswers: ['b'],
     explanation:
-      'The spirit of the game is to tell your partners if they are wrong, if they have caused a foul or a violation when I am on the court and close to the action.',
+      'The spirit of the game is to tell your partners if they are wrong, if they have caused a foul or a violation when I am on the field and close to the action.',
     rules: ['1.10.1.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -110,7 +110,7 @@ export default [
   },
   {
     category: Categories.SPIRIT,
-    question: 'Although I am not on the court (on the side line), I can call a foul and/or intervene on a call.',
+    question: 'Although I am not on the field (on the side line), I can call a foul and/or intervene on a call.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -132,7 +132,7 @@ export default [
       b: 'Not a turnover',
     },
     correctAnswers: ['a'],
-    explanation: 'The line is not part of the court. The player is therefore outside the boundaries of the court.',
+    explanation: 'The line is not part of the field. The player is therefore outside the boundaries of the field.',
     rules: ['2.3.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -170,7 +170,7 @@ export default [
   {
     category: Categories.FIELD,
     question:
-      'An attacker catches the disc in the air. Upon landing, his right foot lands first in the center court. His momentum carries him out of the field.',
+      'An attacker catches the disc in the air. Upon landing, his right foot lands first in the center field. His momentum carries him out of the field.',
     image: undefined,
     answerChoices: {
       a: 'Turnover',
@@ -1922,7 +1922,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   {
     category: Categories.CONTINUATION,
     question:
-      'I call a violation at the time of the throw because the carrier had not put a foot in the center court after going for the disc in touch. The pass is missed. Any violation stops the play, so his failure is not counted. The disc is returned to him and play resumes with a check.',
+      'I call a violation at the time of the throw because the carrier had not put a foot in the center field after going for the disc in touch. The pass is missed. Any violation stops the play, so his failure is not counted. The disc is returned to him and play resumes with a check.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2899,7 +2899,7 @@ If this results in a count of ten(10) or more, it is a stall - out change of pos
     explanation: `
 « The defense has 60 seconds(compared to 45 for the offense) after the point has been scored to move.After this time the attack can call a time - out violation.
 If it is the first time or if there is a contest, no penalty is applied.
-If it is not the first time, then the attack imposes a time - out on the defense.If there was no time - out, the offense restarts in the center of the court and the game starts with a check.»
+If it is not the first time, then the attack imposes a time - out on the defense.If there was no time - out, the offense restarts in the center of the field and the game starts with a check.»
   `,
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
@@ -2967,7 +2967,7 @@ If after calling 20 seconds, 10 seconds, 5 seconds, the offense has not played t
     explanation: `
 « This time - out can only be called by the captains(team or spirit) or a game advisor.The call can be made after a call that stopped the game or after the start of a point and before the start.
 During this time out, no tactical points may be discussed by the teams.
-After the captains have met to find solutions to improve the spirit of the game, both teams will meet in a circle in the middle of the court for the captains to state the solutions found.»
+After the captains have met to find solutions to improve the spirit of the game, both teams will meet in a circle in the middle of the field for the captains to state the solutions found.»
   `,
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',

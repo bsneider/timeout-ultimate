@@ -37,7 +37,7 @@ export default [
     },
     correctAnswers: ['c'],
     explanation:
-      'A defender is always considered in-play, so the disc is considered to have left the playing area when the defender touches it. We must therefore resume as close as possible to this point. This fact of play is deepened in WFDF Rules of ultimate 2013 – Interpretations, paragraph 11.3.',
+      'A defender is always considered in-play, so the disc is considered to have left the playing area when the defender touches it. We must therefore resume as close as possible to this point.',
     rules: ['11.2.', '11.3.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
@@ -118,7 +118,7 @@ export default [
     correctAnswers: ['b'],
     explanation:
       'The defender should indicate to the thrower where she should establish the pivot point and wait until they are correctly positioned to resume the count.',
-    rules: ['18.2.6.', '18.2.6.2.', '18.6.2.3.'],
+    rules: ['18.2.6.', '18.2.6.2.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
   },
@@ -350,9 +350,7 @@ export default [
       d: 'Play stops, possession remains with the receiver and play resumes at (1) with a check',
     },
     correctAnswers: ['a'],
-    explanation: `La réponse se trouve dans:
-"-rules of ultimate", paragraphe 16.2.4
--official rules 16.6`,
+    explanation: undefined,
     rules: ['16.2.4.', '16.6.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
@@ -430,27 +428,27 @@ export default [
     },
     correctAnswers: ['a'],
     explanation: undefined,
-    rules: ['18.2.5.', '18.2.5.5.', '18.2.5.6.'],
+    rules: ['18.2.5.', '18.2.5.5.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
-  {
-    category: Categories.INFRACTIONS_VIOLATIONS,
-    question:
-      'I am on offense. On a catch, I intentionally deflect the disc (without catching it) to a teammate in the end zone. What should the defense call?',
-    image: undefined,
-    answerChoices: {
-      a: 'Travel',
-      b: 'Foul',
-      c: 'Violation',
-      d: 'Nothing, it is allowed. There is a point',
-    },
-    correctAnswers: ['d'],
-    explanation: undefined,
-    rules: ['18.12.'],
-    source: 'Monkeys - Pierre Gruau',
-    level: Levels.DIFFICULT,
-  },
+  // {
+  //   category: Categories.INFRACTIONS_VIOLATIONS,
+  //   question:
+  //     'I am on offense. On a catch, I intentionally deflect the disc (without catching it) to a teammate in the end zone. What should the defense call?',
+  //   image: undefined,
+  //   answerChoices: {
+  //     a: 'Travel',
+  //     b: 'Foul',
+  //     c: 'Violation',
+  //     d: 'Nothing, it is allowed. There is a point',
+  //   },
+  //   correctAnswers: ['d'],
+  //   explanation: undefined,
+  //   // rules: ['18.12.'], //TODO rule does not exist so need rules if will show this question
+  //   source: 'Monkeys - Pierre Gruau',
+  //   level: Levels.DIFFICULT,
+  // },
   {
     category: Categories.FOULS,
     question: "I carry the disc. I call 'contact'. The marker does not contest. What happens?",
@@ -633,8 +631,7 @@ export default [
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation:
-      'If the turnover occurred without a call that stopped the game, no check is needed. The correct answer can be found in the rules, paragraph 10.1.',
+    explanation: 'If the turnover occurred without a call that stopped the game, no check is needed',
     rules: ['10.1.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
