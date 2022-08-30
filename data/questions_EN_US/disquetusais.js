@@ -188,11 +188,11 @@ export default [
       'An attacker catches the disc in the air. Upon landing, his right foot lands first on the end line and then his left foot in the attacked area.',
     image: undefined,
     answerChoices: {
-      a: 'There is a point',
-      b: 'There is no point',
+      a: 'It is a point',
+      b: 'It is not a point',
     },
     correctAnswers: ['b'],
-    explanation: 'The point is not validated because at the reception his first touch is not in the end zone.',
+    explanation: 'The first contact was not in the end zone so it is not a point.',
     rules: ['11.4.2.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -720,7 +720,7 @@ If at the D of 'ten' (or T of 'ten'), the thrower had the disc in hand and even 
   },
   {
     category: Categories.COUNT,
-    question: "'Stall-out' is called by the scorekeeper. The thrower challenges. At what point does the count resume?",
+    question: "'Stall-out' is called by the scorekeeper. The thrower contests. At what point does the count resume?",
     image: undefined,
     answerChoices: {
       a: "At 'count 6",
@@ -941,7 +941,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
   },
   {
     category: Categories.CHECK,
-    question: ' I go for the disc in touch after a turnover. Before my pass I have to check the disc on the ground',
+    question: ' I pick up the disc after a turnover. Before I pass I have to check the disc?',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -949,15 +949,14 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
     },
     correctAnswers: ['b'],
     explanation:
-      'Play is not stopped on a turnover. Therefore, there is no check on the floor, nor is there a check from the opponent.',
-    rules: undefined,
+      'Play is not stopped on a turnover. Therefore, there is no check on the ground, nor is there a check from the opponent.',
+    rules: ['10.1.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
   },
   {
     category: Categories.CHECK,
-    question:
-      'I place myself on the brick point. Before making my pass I have to wait for my opponent to check the disc',
+    question: 'I stand on the brick point. Before making a pass I have to wait for my opponent to check the disc',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1005,7 +1004,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
   {
     category: Categories.CHECK,
     question:
-      "I am in the opponent's zone, about to catch my partner's pass. Making contact, I call a foul. My opponent does not challenge. I have to pick up the disc, stand in front of their zone and wait for the check to play.",
+      "I am in the opponent's zone, about to catch my partner's pass. Making contact, I call a foul. My opponent does not contest. I have to pick up the disc, stand in front of their zone and wait for the check to play.",
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1099,7 +1098,7 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
   {
     category: Categories.OUT,
     question:
-      'An attacker fetches the disc outside the playing area. He establishes his pivot on the sideline and makes a decisive pass. Is the point valid?',
+      'An attacker fetches the disc outside the playing area. He establishes his pivot on the sideline and makes a decisive pass. Is his pivot point valid?',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1107,10 +1106,10 @@ If the count was equal to or greater than 5, we start again at 'counted 6' (this
     },
     correctAnswers: ['a'],
     explanation: `
-« The pivot foot must be placed in the court and the lines are not part of it.
+« The pivot foot must be placed in the field of play and the lines are not part of it.
 However, the rules (13.11) state that since the lines are very narrow and the effect on play negligible, it is acceptable to place the pivot foot on the line.»
     `,
-    rules: undefined,
+    rules: ['13.1.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
   },
@@ -1306,7 +1305,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.RECEIVER,
     question:
-      'When I was replacing my arm in the stack, my opponent touched me with his arm. I call a foul and my opponent challenges. He is wrong.',
+      'When I was replacing my arm in the stack, my opponent touched me with his arm. I call a foul and my opponent contests. He is wrong.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1314,7 +1313,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
     },
     correctAnswers: ['b'],
     explanation:
-      'My opponent causes minor contact, having no impact on the game. So he was right to challenge because I should not have called the foul.',
+      'My opponent causes minor contact, having no impact on the game. So he was right to contest because I should not have called the foul.',
     rules: ['12.8.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.DIFFICULT,
@@ -1322,7 +1321,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.RECEIVER,
     question:
-      'When I get back into the stack, my opponent trips me. I call a foul and my opponent challenges. He is wrong.',
+      'When I get back into the stack, my opponent trips me. I call a foul and my opponent contests. He is wrong.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1352,15 +1351,15 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.TURNOVERS,
     question:
-      "My partner passes to me. The disc hits some grass but I catch it before it hits the ground. A defender calls down. I challenge because the disc didn't really hit the ground. Who is right?",
+      "My teammate passes to me. The disc touches some grass, but is caught before touching dirt. A defender calls down. I contest because the disc didn't really hit the ground. Who is right?",
     image: undefined,
     answerChoices: {
-      a: 'Me, there is no down',
-      b: 'The defender, the disc is down',
+      a: 'Me, the disc is up',
+      b: 'The defender, the disc is down. Grass is part of the ground',
     },
     correctAnswers: ['b'],
     explanation:
-      'If the disc touches the grass or a flower before it is caught, it is cin boundsred down. There is a change of possession (turnover). See in the rules the lexicon and the definition of ground',
+      '"Ground: The ground consists of all substantial solid objects, including grass, marker cones, equipment, water, trees, fences, walls and non-players, but excluding all players and their worn clothing, airborne particles and precipitation." If the disc touches the grass or a flower before it is caught, it is down. There is a change of possession (turnover). See in the rules the lexicon and the definition of ground',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.EASY,
@@ -1446,7 +1445,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.TURNOVERS,
     question:
-      'An attacker catches the disc by colliding with his defender. The defender calls a foul which is not challenged. Since the disc was caught, there is no turnover and the disc returns to the thrower.',
+      'An attacker catches the disc by colliding with his defender. The defender calls a foul which is not contestd. Since the disc was caught, there is no turnover and the disc returns to the thrower.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1462,7 +1461,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.TURNOVERS,
     question:
-      'I throw a pass into the wind. The disc comes back to me and I catch it without anyone having touched it. Since I had no intention of making a self-pass, I can keep the disc.',
+      'I throw a pass into the wind. The disc comes back to me and I catch it without anyone else touching it. Since I had no intention of making a self-pass, I can keep the disc.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1470,18 +1469,18 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
     },
     correctAnswers: ['b'],
     explanation:
-      "It's a double touch, whether the intention is there or not. I can't get my pitch back if no one has touched it.",
-    rules: undefined,
+      "It's a double touch, whether the intention is there or not. I can't get my throw back if no one has touched it.",
+    rules: ['13.2.', '13.2.5.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
   },
   {
     category: Categories.TURNOVERS,
-    question: 'The defense calls a turnover. The offense challenges. What happens?',
+    question: 'The defense calls a turnover. The offense contests. What happens?',
     image: undefined,
     answerChoices: {
       a: 'The disc is returned to the thrower',
-      b: "The turnover is maintained, you can't challenge a turnover",
+      b: "The turnover is maintained, you can't contest a turnover",
     },
     correctAnswers: ['a'],
     explanation: 'The disc is returned to the last uncontested thrower.',
@@ -1492,7 +1491,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.TURNOVERS,
     question:
-      "I throw the disc to the 10 and my pass misses. My defender calls end of count (or stall-out) when the disc flies. I don't challenge. What happens?",
+      "I throw the disc as 10 is uttered. My pass is not caught. My defender calls end of count (or stall-out) when the disc flies. I don't contest. What happens?",
     image: undefined,
     answerChoices: {
       a: 'The defense recovers the disc no matter what happens to my pass',
@@ -1506,13 +1505,13 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
 If my defender takes the disc in hand, he becomes the thrower and I check the disc to restart the play.
 If my defender does not want to throw, he does not take the disc (leaves it on the ground) and I must check the disc on the ground to restart the game.»
     `,
-    rules: undefined,
+    rules: ['13.7.3.', '13. 2.', '13.2.2.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
   },
   {
     category: Categories.TURNOVERS,
-    question: 'My marker calls end of count (or stall-out) as I throw and challenge. My pass misses. What happens?',
+    question: 'My marker calls end of count (or stall-out) as I throw and contest. My pass misses. What happens?',
     image: undefined,
     answerChoices: {
       a: 'The game resumes where I am and I get the disc back after the disputed stall-out',
@@ -1528,10 +1527,10 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   {
     category: Categories.TURNOVERS,
     question:
-      "I throw the disc and my pass is successful. My opponent calls stall-out, which I challenge because he was counting too fast and I didn't have time to call fast count. What happens?",
+      "I throw the disc and my pass is successful. My opponent calls stall-out, which I contest because he was counting too fast and I didn't have time to call fast count. What happens?",
     image: undefined,
     answerChoices: {
-      a: "The stall-out can't be challenged, I should have called Fast Count earlier",
+      a: "The stall-out can't be contestd, I should have called Fast Count earlier",
       b: 'The stall-out is contested, the game resumes at count 8',
     },
     correctAnswers: ['b'],
@@ -1543,10 +1542,10 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
   {
     category: Categories.TURNOVERS,
     question:
-      "I throw the disc and my pass is missed (or intercepted). My opponent calls stall-out. I challenge because he was counting too fast and I didn't have time to call fast count. What happens?",
+      "I throw the disc and my pass is missed (or intercepted). My opponent calls stall-out. I contest because he was counting too fast and I didn't have time to call fast count. What happens?",
     image: undefined,
     answerChoices: {
-      a: "The stall-out can't be challenged, I should have called Fast Count earlier",
+      a: "The stall-out can't be contestd, I should have called Fast Count earlier",
       b: 'The stall-out is contested the game resumes at count 8',
       c: 'The contested stall-out is ignored and the turnover is maintained',
     },
@@ -2014,7 +2013,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      "I am a defender. I intercept the disc and hit a offensive player right after. She calls a foul. I don't challenge. What happens?",
+      "I am a defender. I intercept the disc and hit a offensive player right after. She calls a foul. I don't contest. What happens?",
     image: undefined,
     answerChoices: {
       a: 'The turnover is maintained',
@@ -2031,7 +2030,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      "I jump and catch the disc in the air in the opponent's end zone. My defender bumps me and lands me out of bounds. I call a foul, which he does not challenge. What happens?",
+      "I jump and catch the disc in the air in the opponent's end zone. My defender bumps me and lands me out of bounds. I call a foul, which he does not contest. What happens?",
     image: undefined,
     answerChoices: {
       a: 'This is a point',
@@ -2047,7 +2046,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      'I catch the disc in the air. My defender bumps me and lands me outside his end zone. I call a foul which he challenges. The disc goes back to the thrower.',
+      'I catch the disc in the air. My defender bumps me and lands me outside his end zone. I call a foul which he contests. The disc goes back to the thrower.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2062,7 +2061,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      'I am the thrower. When I pivot to make my pass, the marker makes contact with me. I did not throw the disc. I call contact and he does not challenge. What happens?',
+      'I am the thrower. When I pivot to make my pass, the marker makes contact with me. I did not throw the disc. I call contact and he does not contest. What happens?',
     image: undefined,
     answerChoices: {
       a: 'The game stops and the count will resume at 1',
@@ -2071,7 +2070,7 @@ If the result was not a scored point, the affected players may readjust their di
     },
     correctAnswers: ['b'],
     explanation:
-      'If he does not challenge, the play does not stop and the count resumes at 1. By calling a contact violation rather than a foul (he has a choice), the thrower does not want to stop the play.',
+      'If he does not contest, the play does not stop and the count resumes at 1. By calling a contact violation rather than a foul (he has a choice), the thrower does not want to stop the play.',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.DIFFICULT,
@@ -2079,7 +2078,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      "I catch the disc in the opponent's zone and my opponent's contact causes me to lose the disc. I call a foul. He does not challenge. What happens?",
+      "I catch the disc in the opponent's zone and my opponent's contact causes me to lose the disc. I call a foul. He does not contest. What happens?",
     image: undefined,
     answerChoices: {
       a: 'This is a point because it does not dispute',
@@ -2096,7 +2095,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      "I catch the disc in the opponent's zone and my opponent's contact causes me to lose the disc. I call a strip (not a foul). He does not challenge. What happens?",
+      "I catch the disc in the opponent's zone and my opponent's contact causes me to lose the disc. I call a strip (not a foul). He does not contest. What happens?",
     image: undefined,
     answerChoices: {
       a: 'This is a point because it does not dispute',
@@ -2113,7 +2112,7 @@ If the result was not a scored point, the affected players may readjust their di
   {
     category: Categories.FOULS,
     question:
-      'The attacker I mark shoves me after catching the disc. I call a foul. He does not challenge the contact. He keeps the disc because he had caught the disc before he touched me.',
+      'The attacker I mark shoves me after catching the disc. I call a foul. He does not contest the contact. He keeps the disc because he had caught the disc before he touched me.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2122,8 +2121,8 @@ If the result was not a scored point, the affected players may readjust their di
     correctAnswers: ['b'],
     explanation: `
 « An offensive receiving foul occurs when a receiver makes contact with a defender before, during, or directly after each player takes action on the disc.
-If the foul is not challenged, it is a turnover and the defender wins the possession where the foul occurred.
-If the pass is complete and the foul is challenged, the disc returns to the thrower.»
+If the foul is not contestd, it is a turnover and the defender wins the possession where the foul occurred.
+If the pass is complete and the foul is contestd, the disc returns to the thrower.»
   `,
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
@@ -2132,7 +2131,7 @@ If the pass is complete and the foul is challenged, the disc returns to the thro
   {
     category: Categories.FOULS,
     question:
-      "The attacker I'm marking shoves me before catching the disc. I call a foul. He does not challenge the contact. It's a turnover. I do not have to pick up the disc. I can check the disc without taking it and call disc in to restart the play. Is the resolution correct?",
+      "The attacker I'm marking shoves me before catching the disc. I call a foul. He does not contest the contact. It's a turnover. I do not have to pick up the disc. I can check the disc without taking it and call disc in to restart the play. Is the resolution correct?",
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2140,7 +2139,7 @@ If the pass is complete and the foul is challenged, the disc returns to the thro
     },
     correctAnswers: ['b'],
     explanation:
-      'If the foul is not challenged, it is a turnover and the defender wins the possession where the foul occurred.',
+      'If the foul is not contestd, it is a turnover and the defender wins the possession where the foul occurred.',
     rules: ['17.2.2.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.DIFFICULT,
@@ -2264,7 +2263,7 @@ If he is too close, I must call distance or disc space so that he moves back and
     },
     correctAnswers: ['b'],
     explanation:
-      'A scoring infraction may be challenged by the defense, in which case play stops. After any uncontested scoring infraction, the scorer shall restart the count at the last number fully called before the call minus one (1).',
+      'A scoring infraction may be contestd by the defense, in which case play stops. After any uncontested scoring infraction, the scorer shall restart the count at the last number fully called before the call minus one (1).',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -2332,7 +2331,7 @@ If he is too close, I must call distance or disc space so that he moves back and
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
     question:
-      'The first zone curtain is legitimately placed. A pass breaks through and an attacker behind these defenders catches the disc. Being a defender and 1 meter away from this player, I start counting. When the first curtain gets back in front of the thrower, I stop my count and quickly back up to get out of the 3 meters. A non-disc-carrying attacker calls double team because there is more than one player within 3 meters at that moment. I challenge. Am I right?',
+      'The first zone curtain is legitimately placed. A pass breaks through and an attacker behind these defenders catches the disc. Being a defender and 1 meter away from this player, I start counting. When the first curtain gets back in front of the thrower, I stop my count and quickly back up to get out of the 3 meters. A non-disc-carrying attacker calls double team because there is more than one player within 3 meters at that moment. I contest. Am I right?',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2340,7 +2339,7 @@ If he is too close, I must call distance or disc space so that he moves back and
     },
     correctAnswers: ['a'],
     explanation: `
-« A marking infraction can be challenged by the defense, in which case play stops.
+« A marking infraction can be contestd by the defense, in which case play stops.
 The cross - chase between the replacement of the first curtain and the defender of the second curtain is frequent.
 The rules specify that a simple run in this 3 - meter zone is not a double team.Therefore, my running out of this zone cannot be cin boundsred an infraction.»
   `,
@@ -2844,7 +2843,7 @@ If this results in a count of ten(10) or more, it is a stall - out change of pos
   },
   {
     category: Categories.APPENDIX,
-    question: 'I have one minute to resolve a challenge.',
+    question: 'I have one minute to resolve a contest.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -2852,7 +2851,7 @@ If this results in a count of ten(10) or more, it is a stall - out change of pos
     },
     correctAnswers: ['b'],
     explanation:
-      'If after 30 seconds of discussion the challenge is not resolved, the disc returns to the last uncontested thrower who then has 15 seconds to restart the game.',
+      'If after 30 seconds of discussion the contest is not resolved, the disc returns to the last uncontested thrower who then has 15 seconds to restart the game.',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -2899,7 +2898,7 @@ If this results in a count of ten(10) or more, it is a stall - out change of pos
     correctAnswers: ['a'],
     explanation: `
 « The defense has 60 seconds(compared to 45 for the offense) after the point has been scored to move.After this time the attack can call a time - out violation.
-If it is the first time or if there is a challenge, no penalty is applied.
+If it is the first time or if there is a contest, no penalty is applied.
 If it is not the first time, then the attack imposes a time - out on the defense.If there was no time - out, the offense restarts in the center of the court and the game starts with a check.»
   `,
     rules: undefined,

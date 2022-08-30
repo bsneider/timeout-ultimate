@@ -4,7 +4,7 @@ export default [
   {
     category: Categories.FIELD,
     question: 'The dimensions of an outdoor field are :',
-    image: undefined,
+    image: undefined, //TODO could show field dimensions image which was added to assets but need new feature to show image after answer toggle
     answerChoices: {
       a: '90m x 30m',
       b: '97m x 35m',
@@ -12,7 +12,7 @@ export default [
     },
     correctAnswers: ['c'],
     explanation: 'See the diagram in Chapter 2 of the rules.',
-    rules: undefined,
+    rules: ['2.1.', '2.2.', '2.3.', '2.4.', '2.5.', '2.6.', '2.7.'],
     source: 'DFEU - Pablo',
     level: Levels.EASY,
   },
@@ -191,12 +191,12 @@ export default [
   },
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
-    question: "Thrower calls 'Disc Space' and marker challenges",
+    question: "Thrower calls 'Disc Space' and marker contests",
     image: undefined,
     answerChoices: {
       a: 'The game stops',
       b: "The game doesn't stop",
-      c: 'The marker cannot challenge a marking infraction',
+      c: 'The marker cannot contest a marking infraction',
     },
     correctAnswers: ['b'],
     explanation: 'The game would not have stopped if the infraction had been accepted.',

@@ -37,8 +37,8 @@ export default [
     },
     correctAnswers: ['c'],
     explanation:
-      'A defender is always considered in-play, so the disc is considered to have left the playing area when the defender touches it. We must therefore resume as close as possible to this point.This fact of play is deepened in WFDF Rules of ultimate 2013 – Interpretations, paragraph 11.3.',
-    rules: ['11.2.'],
+      'A defender is always considered in-play, so the disc is considered to have left the playing area when the defender touches it. We must therefore resume as close as possible to this point. This fact of play is deepened in WFDF Rules of ultimate 2013 – Interpretations, paragraph 11.3.',
+    rules: ['11.2.', '11.3.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
   },
@@ -176,7 +176,7 @@ export default [
   {
     category: Categories.COUNT,
     question:
-      "I am marking the thrower. A 'pick' is called when I have just counted '8'. What do I need to do to get the count back?",
+      "I am marking the thrower. A 'pick' is called when I have just counted '8'. What number does the count continue with?",
     image: undefined,
     answerChoices: {
       a: 'Stall 6',
@@ -323,7 +323,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      "I am a marker on the thrower. A 'pick' is called when I just counted '4'. What do I need to do to get the count back?",
+      "I am a marker on the thrower. A 'pick' is called when I just counted '4'. What number does the count continue with?",
     image: undefined,
     answerChoices: {
       a: 'Stall 2',
@@ -341,7 +341,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      "I am on offense. I call 'foul' on the throw. It is not challenged, however my pass is caught. What happens?",
+      "I am on offense. I call 'foul' on the throw. It is not contestd, however my pass is caught. What happens?",
     image: undefined,
     answerChoices: {
       a: "The game continues if the thrower calls 'play on'",
@@ -353,7 +353,7 @@ export default [
     explanation: `La réponse se trouve dans:
 "-rules of ultimate", paragraphe 16.2.4
 -official rules 16.6`,
-    rules: undefined,
+    rules: ['16.2.4.', '16.6.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
@@ -368,7 +368,7 @@ export default [
       d: 'I start counting again from (1) without the game stopping',
     },
     correctAnswers: ['a'],
-    explanation: 'Play is stopped only if the scoring infraction is challenged.',
+    explanation: 'Play is stopped only if the scoring infraction is contestd.',
     rules: ['18.1.3.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
@@ -420,7 +420,7 @@ export default [
   {
     category: Categories.INFRACTIONS_VIOLATIONS,
     question:
-      "I'm on offense and on a reception, I purposely juggle the disc to gain ground. What should the defense call?",
+      "I'm on offense and during a catch, I purposely juggle the disc to gain ground. What should the defense call?",
     image: undefined,
     answerChoices: {
       a: 'Travel',
@@ -429,8 +429,8 @@ export default [
       d: "Nothing, it's allowed",
     },
     correctAnswers: ['a'],
-    explanation: 'The answer can be found in the rules of ultimate, paragraph 18.2.5.6',
-    rules: ['18.2.5.', '18.2.5.5.'],
+    explanation: undefined,
+    rules: ['18.2.5.', '18.2.5.5.', '18.2.5.6'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
@@ -446,8 +446,8 @@ export default [
       d: 'Nothing, it is allowed. There is a point',
     },
     correctAnswers: ['d'],
-    explanation: 'The answer can be found in the official rules, paragraph 18.12',
-    rules: undefined,
+    explanation: undefined,
+    rules: ['18.12.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
@@ -493,8 +493,8 @@ export default [
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation: 'The answer can be found in the official rules, paragraph 18.15',
-    rules: undefined,
+    explanation: undefined,
+    rules: ['18.15.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
   },
@@ -538,8 +538,8 @@ export default [
       b: 'False',
     },
     correctAnswers: ['a'],
-    explanation: 'The answer can be found in rules of ultimate, official rules, paragraph 11.5',
-    rules: undefined,
+    explanation: undefined,
+    rules: ['11.5.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
@@ -595,15 +595,15 @@ export default [
   {
     category: Categories.TIMEOUT,
     question:
-      "There's a turnover off the court. I have to wait until I have established my pivot foot to call a timeout.",
+      "There's a turnover and the disc goes out of bounds. I have to wait until I have established my pivot foot to call a timeout.",
     image: undefined,
     answerChoices: {
       a: 'True',
       b: 'False',
     },
     correctAnswers: ['b'],
-    explanation: 'The answer can be found in the official rules, paragraph 20.1',
-    rules: undefined,
+    explanation: undefined,
+    rules: ['20.1.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,
   },
@@ -635,7 +635,7 @@ export default [
     correctAnswers: ['b'],
     explanation:
       'If the turnover occurred without a call that stopped the game, no check is needed. The correct answer can be found in the rules, paragraph 10.1.',
-    rules: undefined,
+    rules: ['10.1.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
   },
@@ -671,7 +671,7 @@ export default [
   },
   {
     category: Categories.COUNT,
-    question: 'To be able to count, a defender must be at..',
+    question: 'To be able to count, a defender must be..',
     image: undefined,
     answerChoices: {
       a: "less than 5 meters from the thrower's pivot point",

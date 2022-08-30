@@ -48,6 +48,7 @@ translation_fixes = {
     "Non": "False",
     "striker": "offensive player",
     "Striker": "Offensive player",
+    "challenge": "contest",
 }
 
 
