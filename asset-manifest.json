@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/timeout-ultimate/static/js/app.0d933eb4.chunk.js",
-    "app.js.map": "/timeout-ultimate/static/js/app.0d933eb4.chunk.js.map",
+    "app.js": "/timeout-ultimate/static/js/app.7da24290.chunk.js",
+    "app.js.map": "/timeout-ultimate/static/js/app.7da24290.chunk.js.map",
     "runtime~app.js": "/timeout-ultimate/static/js/runtime~app.015cabf5.js",
     "runtime~app.js.map": "/timeout-ultimate/static/js/runtime~app.015cabf5.js.map",
     "static/js/2.e963046e.chunk.js": "/timeout-ultimate/static/js/2.e963046e.chunk.js",
@@ -57,6 +57,6 @@
   "entrypoints": [
     "static/js/runtime~app.015cabf5.js",
     "static/js/2.e963046e.chunk.js",
-    "static/js/app.0d933eb4.chunk.js"
+    "static/js/app.7da24290.chunk.js"
   ]
 }
