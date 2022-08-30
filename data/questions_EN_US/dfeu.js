@@ -198,7 +198,7 @@ export default [
       b: "The game doesn't stop",
       c: 'The marker cannot contest a marking infraction',
     },
-    correctAnswers: ['b'],
+    correctAnswers: ['a'],
     explanation: 'The game would not have stopped if the infraction had been accepted.',
     rules: ['18.1.2.'],
     source: 'DFEU - Pablo',
