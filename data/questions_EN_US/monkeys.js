@@ -341,7 +341,7 @@ export default [
   {
     category: Categories.CONTINUATION,
     question:
-      "I am on offense. I call 'foul' on the throw. It is not contestd, however my pass is caught. What happens?",
+      "I am on offense. I call 'foul' on the throw. It is not contested, however my pass is caught. What happens?",
     image: undefined,
     answerChoices: {
       a: "The game continues if the thrower calls 'play on'",
@@ -368,7 +368,7 @@ export default [
       d: 'I start counting again from (1) without the game stopping',
     },
     correctAnswers: ['a'],
-    explanation: 'Play is stopped only if the scoring infraction is contestd.',
+    explanation: 'Play is stopped only if the scoring infraction is contested.',
     rules: ['18.1.3.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.MIDDLE,
@@ -479,7 +479,7 @@ export default [
       d: 'This first call acts as a first warning and the game continues',
     },
     correctAnswers: ['c'],
-    explanation: 'The correct answer can be found in Rules of ultimate, Appendix V4.0 paragraph 7.5.',
+    explanation: undefined,
     rules: ['7.5.', '7.5.2.'],
     source: 'Monkeys - Pierre Gruau',
     level: Levels.DIFFICULT,

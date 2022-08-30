@@ -1445,7 +1445,7 @@ However, the rules (13.11) state that since the lines are very narrow and the ef
   {
     category: Categories.TURNOVERS,
     question:
-      'An attacker catches the disc by colliding with his defender. The defender calls a foul which is not contestd. Since the disc was caught, there is no turnover and the disc returns to the thrower.',
+      'An attacker catches the disc by colliding with his defender. The defender calls a foul which is not contested. Since the disc was caught, there is no turnover and the disc returns to the thrower.',
     image: undefined,
     answerChoices: {
       a: 'True',
@@ -1530,7 +1530,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
       "I throw the disc and my pass is successful. My opponent calls stall-out, which I contest because he was counting too fast and I didn't have time to call fast count. What happens?",
     image: undefined,
     answerChoices: {
-      a: "The stall-out can't be contestd, I should have called Fast Count earlier",
+      a: "The stall-out can't be contested, I should have called Fast Count earlier",
       b: 'The stall-out is contested, the game resumes at count 8',
     },
     correctAnswers: ['b'],
@@ -1545,7 +1545,7 @@ If my defender does not want to throw, he does not take the disc (leaves it on t
       "I throw the disc and my pass is missed (or intercepted). My opponent calls stall-out. I contest because he was counting too fast and I didn't have time to call fast count. What happens?",
     image: undefined,
     answerChoices: {
-      a: "The stall-out can't be contestd, I should have called Fast Count earlier",
+      a: "The stall-out can't be contested, I should have called Fast Count earlier",
       b: 'The stall-out is contested the game resumes at count 8',
       c: 'The contested stall-out is ignored and the turnover is maintained',
     },
@@ -2121,8 +2121,8 @@ If the result was not a scored point, the affected players may readjust their di
     correctAnswers: ['b'],
     explanation: `
 « An offensive receiving foul occurs when a receiver makes contact with a defender before, during, or directly after each player takes action on the disc.
-If the foul is not contestd, it is a turnover and the defender wins the possession where the foul occurred.
-If the pass is complete and the foul is contestd, the disc returns to the thrower.»
+If the foul is not contested, it is a turnover and the defender wins the possession where the foul occurred.
+If the pass is complete and the foul is contested, the disc returns to the thrower.»
   `,
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
@@ -2139,7 +2139,7 @@ If the pass is complete and the foul is contestd, the disc returns to the throwe
     },
     correctAnswers: ['b'],
     explanation:
-      'If the foul is not contestd, it is a turnover and the defender wins the possession where the foul occurred.',
+      'If the foul is not contested, it is a turnover and the defender wins the possession where the foul occurred.',
     rules: ['17.2.2.'],
     source: 'Disque Tu Sais - Pablo',
     level: Levels.DIFFICULT,
@@ -2263,7 +2263,7 @@ If he is too close, I must call distance or disc space so that he moves back and
     },
     correctAnswers: ['b'],
     explanation:
-      'A scoring infraction may be contestd by the defense, in which case play stops. After any uncontested scoring infraction, the scorer shall restart the count at the last number fully called before the call minus one (1).',
+      'A scoring infraction may be contested by the defense, in which case play stops. After any uncontested scoring infraction, the scorer shall restart the count at the last number fully called before the call minus one (1).',
     rules: undefined,
     source: 'Disque Tu Sais - Pablo',
     level: Levels.MIDDLE,
@@ -2339,7 +2339,7 @@ If he is too close, I must call distance or disc space so that he moves back and
     },
     correctAnswers: ['a'],
     explanation: `
-« A marking infraction can be contestd by the defense, in which case play stops.
+« A marking infraction can be contested by the defense, in which case play stops.
 The cross - chase between the replacement of the first curtain and the defender of the second curtain is frequent.
 The rules specify that a simple run in this 3 - meter zone is not a double team.Therefore, my running out of this zone cannot be cin boundsred an infraction.»
   `,
