@@ -17,9 +17,9 @@ export default (props) => {
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
       <Text style={styles.header}>À propos</Text>
       <Text style={styles.text}>
-        Bonjour ! Je suis Martin Salles, le développeur derrière Timeout Ultimate. C'est une application conçue par des
-        joueurs d'ultimate pour aider d'autres joueurs à apprendre les Rules de l'ultimate. Elle est et restera
-        gratuite. English version by Brandon Sneider.
+        English version by Brandon Sneider. {'\n'} Bonjour ! Je suis Martin Salles, le développeur derrière Timeout
+        Ultimate. C'est une application conçue par des joueurs d'ultimate pour aider d'autres joueurs à apprendre les
+        Rules de l'ultimate. Elle est et restera gratuite.
       </Text>
       <Text style={styles.header}>Remerciements</Text>
       <Text style={styles.text}>

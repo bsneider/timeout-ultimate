@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Image, Platform } from 'react-native';
+import { StyleSheet, Text, View, Image, Platform, Pressable, Alert } from 'react-native';
 import { CheckBox, Button, LinearProgress } from 'react-native-elements';
+import * as MailComposer from 'expo-mail-composer';
 
 import theme from '../utils/theme.js';
-import Feedback from './questions/Feedback.js';
 import DisplayedRule from './questions/DisplayedRule.js';
 import rules from '../../data/rules/rules';
 
@@ -23,7 +23,19 @@ export default ({ question, onSuccess, onFailure, time }) => {
     (accumulated, currentChapter) => Object.assign(accumulated, currentChapter),
     {},
   );
+  const sendEmailAsync = () => {
+    MailComposer.composeAsync({
+      recipients: ['justhuckitstudios+timeoutultimate@gmail.com'],
+      subject: 'A Timeout Ultimate question is unclear',
+      body: `
 
+> Question concerning : ${question.question}
+
+${JSON.stringify(question, null, 2)}
+
+`,
+    });
+  };
   const onValidate = () => {
     if (currentTime < 1) setCurrentTime(1);
 
@@ -129,7 +141,9 @@ export default ({ question, onSuccess, onFailure, time }) => {
           )}
 
           <DisplayedRule ruleNumbers={question.rules} />
-          <Feedback question={question} style={styles.reportIcon} />
+          <Pressable onPress={sendEmailAsync}>
+            <Text style={styles.linkText}>Question Feedback/Report Error</Text>
+          </Pressable>
         </View>
       )}
     </View>
@@ -188,5 +202,11 @@ const styles = StyleSheet.create({
   },
   wrong: {
     color: theme.WRONG_COLOR,
+  },
+  linkText: {
+    marginTop: 8,
+    color: theme.MAIN_COLOR,
+    fontSize: theme.FONT_SIZE_S,
+    textDecorationLine: 'underline',
   },
 });
