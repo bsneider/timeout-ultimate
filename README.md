@@ -1,12 +1,12 @@
 # 🥏 Timeout Ultimate
 
-Setting up a quizz mobile application to learn the rules of ultimate
+Setting up a quiz mobile application to learn the rules of ultimate
 
 ## 👏 Contributing
 
-Found a bug? Take 2 minutes to [report it](https://github.com/sallesma/timeout-ultimate/issues/new)
+Found a bug? Take 2 minutes to [report it](https://github.com/bsneider/timeout-ultimate/issues/new)
 
-If you want to contribute to the projet, just pick up an issue from the [list](https://github.com/sallesma/timeout-ultimate/issues) and start fixing it. You can then open a pull-request so that your contribution can be merged into the main branch.
+If you want to contribute to the projet, just pick up an issue from the [list](https://github.com/bsneider/timeout-ultimate/issues) and start fixing it. You can then open a pull-request so that your contribution can be merged into the main branch.
 
 Not a developer? We always need people to help us with:
 
@@ -25,7 +25,7 @@ You need a recent version of nodejs.
 Clone the project and install all its dependencies:
 
 ```
-git clone git@github.com:sallesma/timeout-ultimate.git
+git clone git@github.com:bsneider/timeout-ultimate.git
 cd timeout-ultimate
 npm install -g expo-cli
 yarn install
